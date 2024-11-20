@@ -1,0 +1,7 @@
+@font-face {
+  src: url("../../assets/roboto-regular.woff") format("woff");
+  font-family: "Yellowtail";
+}
+.main__title {
+  font-family: "Yellowtail";
+}
