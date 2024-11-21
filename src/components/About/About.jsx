@@ -1,15 +1,17 @@
 import React from "react";
 import "../About/About.css";
-
+import aboutMePhoto from "../../assets/CameraLashes.png";
 function About() {
   return (
     <>
-      <img className="about__photo" />
-      <div className="about__me">
-        My name is Trang and I've been a lash artist since 2020. I'm from
-        Seattle, WA and have been enjoy living in San Diego, CA for almost two
-        years now. I'm currently home-based and would love to make you feel even
-        prettier.
+      <div className="about__container">
+        <img className="about__photo" src={aboutMePhoto} alt="About Me Photo" />
+        <div className="about__info">
+          Hello! I'm T.T., a licensed esthetician and certified lash artist
+          since 2020. Operating from my home studio in downtown San Diego, I'm
+          dedicated to enhancing your natural beauty. Let your eyes do the
+          talking!
+        </div>
       </div>
     </>
   );

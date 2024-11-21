@@ -2,21 +2,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 15px;
+
   font-family: Roboto, sans-serif;
-}
 
-.header__nav-links {
-  list-style-type: none;
-  display: flex;
-  gap: 10px;
-}
-.header__logo {
-  width: 300px;
-  height: 300px;
-}
-
-.header__title {
-  font-size: 40px;
-  margin-left: 12px;
+  margin: 0;
 }

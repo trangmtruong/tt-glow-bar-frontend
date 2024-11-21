@@ -2,6 +2,22 @@
   src: url("../../vendor/roboto-regular.woff") format("woff");
   font-family: "Roboto";
 }
-.about__me {
+
+.about__container {
+  display: flex;
+  gap: 30px;
+}
+.about__info {
   font-family: Roboto, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(114, 106, 100, 0.5);
+  border-radius: 2%;
+}
+
+.about__photo {
+  width: 200px;
+  height: 200px;
+  border-radius: 25%;
 }
