@@ -1,0 +1,7 @@
+@font-face {
+  src: url("../../vendor/roboto-regular.woff") format("woff");
+  font-family: "Roboto";
+}
+.about__me {
+  font-family: Roboto, sans-serif;
+}
