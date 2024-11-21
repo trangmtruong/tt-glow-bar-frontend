@@ -1,5 +1,15 @@
 .footer {
   font-family: Roboto, sans-serif;
+
   display: flex;
   justify-content: space-between;
+  padding-bottom: 30px;
+}
+
+.footer__hours {
+  padding-left: 60px;
+}
+
+.footer_contact {
+  padding-right: 60px;
 }

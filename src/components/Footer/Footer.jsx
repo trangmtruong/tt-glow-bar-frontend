@@ -7,10 +7,8 @@ function Footer() {
       <div className="footer">
         <div className="footer__hours">
           Hours:
-          <h3 className="footer__weekdays">Monday-Friday: 9AM-5PM</h3>
-          <h3 className="footer__weekends">
-            Sat-Sun: Contact for availability
-          </h3>
+          <p className="footer__weekdays">Monday-Friday: 9AM-5PM</p>
+          <p className="footer__weekends">Sat-Sun: Contact for availability</p>
         </div>
         <div className="footer_contact">
           Contact:

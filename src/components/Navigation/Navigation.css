@@ -1,7 +1,12 @@
 .nav__container {
   display: flex;
+  justify-content: space-around;
 
   align-items: center;
+  position: fixed;
+  right: -60px;
+  top: -30px;
+  left: 0;
 }
 .nav__links {
   list-style-type: none;
