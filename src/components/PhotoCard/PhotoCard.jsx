@@ -1,7 +1,7 @@
 import React from "react";
-import "../PhotoCard/PhotoCard";
-import CameraLashes from "../../assets/CameraLashes";
-import Star from "../../assets/Star";
+import "../PhotoCard/PhotoCard.css";
+import CameraLashes from "../../assets/CameraLashes.png";
+import Star from "../../assets/Star.svg";
 
 function PhotoCard() {
   return (
@@ -9,7 +9,7 @@ function PhotoCard() {
       <div className="photo__overlay">
         <img src={Star} alt="favorite button" className="photo__favorite-btn" />
       </div>
-      <img src={CameraLashes} alt="" className="photo__img" />
+      <img src={CameraLashes} alt="Photo" className="photo__img" />
     </li>
   );
 }
