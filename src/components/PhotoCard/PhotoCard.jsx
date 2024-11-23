@@ -1,6 +1,6 @@
 import React from "react";
 import "../PhotoCard/PhotoCard.css";
-import CameraLashes from "../../assets/CameraLashes.png";
+import Jacqueline from "../../assets/Jacqueline.png";
 import Star from "../../assets/Star.svg";
 
 function PhotoCard() {
@@ -9,7 +9,7 @@ function PhotoCard() {
       <div className="photo__overlay">
         <img src={Star} alt="favorite button" className="photo__favorite-btn" />
       </div>
-      <img src={CameraLashes} alt="Photo" className="photo__img" />
+      <img src={Jacqueline} alt="Photo" className="photo__img" />
     </li>
   );
 }

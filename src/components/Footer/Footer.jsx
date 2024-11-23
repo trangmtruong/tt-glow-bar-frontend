@@ -5,11 +5,7 @@ function Footer() {
   return (
     <>
       <div className="footer">
-        <div className="footer__hours">
-          Hours:
-          <p className="footer__weekdays">Monday-Friday: 9AM-5PM</p>
-          <p className="footer__weekends">Sat-Sun: Contact for availability</p>
-        </div>
+        <p className="footer__copyright">&copy; 2024 tt's glow bar</p>
         <div className="footer_contact">
           Contact:
           <div className="footer__ig">tt_glow_bar</div>

@@ -4,10 +4,14 @@ import PhotoCard from "../PhotoCard/PhotoCard";
 
 function Craftmanship() {
   return (
-    <div className="craftmanship__content">
-      Beauty Portfolio:
-      <PhotoCard />
-    </div>
+    <section className="craftmanship__content">
+      <p className="craftmanship__text">Beauty Portfolio:</p>
+      <ul className="craftmanship__list">
+        {/*filter clientsphotos here:
+        ex: clientPhotos.filter((item)....*/}
+        <PhotoCard />
+      </ul>
+    </section>
   );
 }
 

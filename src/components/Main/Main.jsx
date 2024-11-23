@@ -5,9 +5,9 @@ import About from "../About/About";
 function Main() {
   return (
     <>
-      <div className="main">
+      <main className="main">
         <About />
-      </div>
+      </main>
     </>
   );
 }
