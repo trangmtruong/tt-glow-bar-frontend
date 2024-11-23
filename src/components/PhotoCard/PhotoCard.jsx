@@ -1,6 +1,6 @@
 import React from "react";
 import "../PhotoCard/PhotoCard.css";
-import Jacqueline from "../../assets/Jacqueline.png";
+import Jacqueline from "../../assets/clients/Jacqueline.png";
 import Star from "../../assets/Star.svg";
 
 function PhotoCard() {

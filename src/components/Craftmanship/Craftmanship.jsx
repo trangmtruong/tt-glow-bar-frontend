@@ -1,6 +1,7 @@
 import React from "react";
 import "../Craftmanship/Craftmanship";
 import PhotoCard from "../PhotoCard/PhotoCard";
+import { clientData } from "../../utils/constants";
 
 function Craftmanship() {
   return (
