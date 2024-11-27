@@ -1,10 +1,16 @@
-import React from "react";
-import "../SignUpModal/SignUpModal.css";
+import React, { useState } from "react";
+import "./SignUpModal.css";
 import ModalWithForm from "../ModalWithForm/ModalWithForm";
 
-function SignUpModal() {
+function SignUpModal({ isOpen, onClose }) {
   return (
-    <ModalWithForm titleText="Sign Up" buttonText="Sign Up" name={"sign-up"}>
+    <ModalWithForm
+      isOpen={isOpen}
+      titleText="Sign Up"
+      buttonText="Sign Up"
+      name={"sign-up"}
+      onClose={onClose}
+    >
       <label htmlFor="signupmodal-name" className="modal__input_type_name">
         Name*{" "}
         <input
@@ -12,7 +18,6 @@ function SignUpModal() {
           className="modal__input"
           id="signup-name"
           placeholder="Name"
-          value={name}
         />
       </label>
       <label htmlFor="signupmodal-email" className="modal__input_type_email">
@@ -22,7 +27,6 @@ function SignUpModal() {
           className="modal__input"
           id="signupmodal-email"
           placeholder="Email"
-          value={email}
         />
       </label>
       <label
@@ -35,7 +39,6 @@ function SignUpModal() {
           className="modal__input"
           id="signupmodal-password"
           placeholder="Password"
-          value={password}
         />
       </label>
       <button className="modal__submit" type="submit">

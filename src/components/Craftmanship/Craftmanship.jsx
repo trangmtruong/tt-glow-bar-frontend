@@ -1,16 +1,17 @@
 import React from "react";
-import "../Craftmanship/Craftmanship";
+import "./Craftmanship.css";
 import PhotoCard from "../PhotoCard/PhotoCard";
 import { clientData } from "../../utils/constants";
 
 function Craftmanship() {
   return (
     <section className="craftmanship__content">
-      <p className="craftmanship__text">Beauty Portfolio:</p>
+      <h2 className="craftmanship__title">Beauty Portfolio</h2>
       <ul className="craftmanship__list">
-        {/*filter clientsphotos here:
-        ex: clientPhotos.filter((item)....*/}
-        <PhotoCard />
+        {clientData.map((item) => {
+          console.log(item);
+          return <PhotoCard key={item.imageUrl} item={item} />;
+        })}
       </ul>
     </section>
   );

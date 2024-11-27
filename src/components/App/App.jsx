@@ -2,20 +2,31 @@ import { useState, useEffect } from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
 
 import "./App.css";
+
 import Header from "../Header/Header";
 import Main from "../Main/Main";
 import Footer from "../Footer/Footer";
-import ModalWithForm from "../ModalWithForm/ModalWithForm";
 import Craftmanship from "../Craftmanship/Craftmanship";
 import BookService from "../BookService/BookService";
+import SignUpModal from "../SignUpModal/SignUpModal";
 
 function App() {
+  //useState hooks
   const [activeModal, setActiveModal] = useState("");
+
+  //functions
+  const closeActiveModal = () => {
+    setActiveModal("");
+  };
+
+  const handleSignUpModal = () => {
+    setActiveModal("sign-up");
+  };
 
   return (
     <>
       <div className="app__content">
-        <Header />
+        <Header handleSignUpModal={handleSignUpModal} />
         <Routes>
           <Route exact path="/" element={<Main />} />
           <Route exact path="/craftmanship" element={<Craftmanship />} />
@@ -23,6 +34,11 @@ function App() {
         </Routes>
         <Footer />
       </div>
+      <SignUpModal
+        onClose={closeActiveModal}
+        isOpen={activeModal === "sign-up"}
+        handleSignUpModal={handleSignUpModal}
+      />
     </>
   );
 }

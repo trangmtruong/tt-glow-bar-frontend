@@ -1,6 +1,6 @@
 import { clientData } from "../../utils/constants";
 
-function Client() {
+function ClientPhotos() {
   return <img src="" alt="" />;
 }
 export default Client;

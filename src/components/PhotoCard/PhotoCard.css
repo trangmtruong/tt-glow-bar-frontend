@@ -1,3 +1,9 @@
 .photo__img {
   width: 200px;
+  border-radius: 5%;
+}
+
+.photo__overlay {
+  display: flex;
+  justify-content: space-between;
 }

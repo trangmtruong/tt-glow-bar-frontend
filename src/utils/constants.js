@@ -1,22 +1,27 @@
 export const clientData = [
   {
     name: "Jacqueline",
-    image: new URL("../assets/clients/Jacqueline.png"),
+    service: "Volume Lashes",
+    imageUrl: new URL("../assets/clients/Jacqueline.png", import.meta.url),
   },
   {
     name: "Alana",
-    image: new URL("../assets/clients/Alana.png"),
+    service: "Brow Lamination",
+    imageUrl: new URL("../assets/clients/Alana.png", import.meta.url),
   },
   {
     name: "Kylee",
-    image: new URL("../assets/clients/Kylee.jpg"),
+    service: "Brow Lamination & Tint",
+    imageUrl: new URL("../assets/clients/Kylee.jpg", import.meta.url),
   },
   {
     name: "Morgan",
-    image: new URL("../assets/clients/Morgan.png"),
+    service: "Lash Lift & Tint",
+    imageUrl: new URL("../assets/clients/Morgan.png", import.meta.url),
   },
   {
     name: "Lyn",
-    image: new URL("../assets/clients/Lyn.png"),
+    service: "Volume Lashes",
+    imageUrl: new URL("../assets/clients/Lyn.png", import.meta.url),
   },
 ];

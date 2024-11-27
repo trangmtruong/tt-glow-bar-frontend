@@ -1,0 +1,14 @@
+.craftmanship__content {
+  padding-top: 200px;
+}
+.craftmanship__title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+.craftmanship__list {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 50px;
+}
