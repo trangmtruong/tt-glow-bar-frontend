@@ -20,24 +20,14 @@
   background-color: rgba(127, 108, 108, 0.5);
   border: none;
   border-radius: 5%;
+  cursor: pointer;
+  padding: 5px;
+}
+.nav__link:hover {
+  color: #fff;
+  background-color: #291e18;
 }
 .nav__logo {
   max-width: 300px;
   height: auto;
-}
-
-.nav__sign-in {
-  cursor: pointer;
-}
-
-.nav__sign-up {
-  cursor: pointer;
-}
-
-.nav__craftmanship {
-  cursor: pointer;
-}
-
-.nav__book-service {
-  cursor: pointer;
 }

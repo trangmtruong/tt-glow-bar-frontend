@@ -9,7 +9,6 @@ function Craftmanship() {
       <h2 className="craftmanship__title">Beauty Portfolio</h2>
       <ul className="craftmanship__list">
         {clientData.map((item) => {
-          console.log(item);
           return <PhotoCard key={item.imageUrl} item={item} />;
         })}
       </ul>

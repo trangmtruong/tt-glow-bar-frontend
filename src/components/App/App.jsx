@@ -9,6 +9,7 @@ import Footer from "../Footer/Footer";
 import Craftmanship from "../Craftmanship/Craftmanship";
 import BookService from "../BookService/BookService";
 import SignUpModal from "../SignUpModal/SignUpModal";
+import SignInModal from "../SignInModal/SignInModal";
 
 function App() {
   //useState hooks
@@ -23,10 +24,17 @@ function App() {
     setActiveModal("sign-up");
   };
 
+  const handleSignInModal = () => {
+    setActiveModal("sign-in");
+  };
+
   return (
     <>
       <div className="app__content">
-        <Header handleSignUpModal={handleSignUpModal} />
+        <Header
+          handleSignUpModal={handleSignUpModal}
+          handleSignInModal={handleSignInModal}
+        />
         <Routes>
           <Route exact path="/" element={<Main />} />
           <Route exact path="/craftmanship" element={<Craftmanship />} />
@@ -38,6 +46,11 @@ function App() {
         onClose={closeActiveModal}
         isOpen={activeModal === "sign-up"}
         handleSignUpModal={handleSignUpModal}
+      />
+      <SignInModal
+        onClose={closeActiveModal}
+        isOpen={activeModal === "sign-in"}
+        handleSignInModal={handleSignInModal}
       />
     </>
   );

@@ -4,7 +4,7 @@ import headerLogo from "../../assets/glowbar-logo-white.svg";
 import Craftmanship from "../Craftmanship/Craftmanship";
 import { Link } from "react-router-dom";
 
-function Navigation({ handleSignUpModal }) {
+function Navigation({ handleSignUpModal, handleSignInModal }) {
   //usestate
 
   //functions
@@ -13,7 +13,13 @@ function Navigation({ handleSignUpModal }) {
     <>
       <nav className="nav__container">
         <div className="nav__links">
-          <button className="nav__link">Sign In</button>
+          <button
+            className="nav__link"
+            onClick={handleSignInModal}
+            type="button"
+          >
+            Sign In{" "}
+          </button>
           <button
             className="nav__link"
             onClick={handleSignUpModal}

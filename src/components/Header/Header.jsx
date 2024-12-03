@@ -3,10 +3,13 @@ import "../Header/Header.css";
 
 import Navigation from "../Navigation/Navigation";
 
-function Header({ handleSignUpModal }) {
+function Header({ handleSignUpModal, handleSignInModal }) {
   return (
     <div className="header">
-      <Navigation handleSignUpModal={handleSignUpModal} />
+      <Navigation
+        handleSignUpModal={handleSignUpModal}
+        handleSignInModal={handleSignInModal}
+      />
     </div>
   );
 }

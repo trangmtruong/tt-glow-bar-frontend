@@ -1,10 +1,33 @@
 import React, { useState } from "react";
-import "../SignInModal.css";
+import "./SignInModal.css";
 import ModalWithForm from "../ModalWithForm/ModalWithForm";
 
-function SignInModal() {
+function SignInModal({ isOpen, onClose }) {
+  //useState Hooks
+
+  const [email, setEmail] = useState("");
+  const handleEmailChange = (e) => {
+    console.log(e.target.value);
+    setEmail(e.target.value);
+  };
+
+  const [password, setPassword] = useState("");
+  const handlePasswordChange = (e) => {
+    console.log(e.target.value);
+    setPassword(e.target.value);
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
   return (
-    <ModalWithForm titleText="Sign In" buttonText="Sign In" name={"sign-in"}>
+    <ModalWithForm
+      isOpen={isOpen}
+      onClose={onClose}
+      titleText="Sign In"
+      buttonText="Sign In"
+      name={"sign-in"}
+    >
       <label htmlFor="signinmodal-email" className="modal__input_type_email">
         Email{""}
         <input
@@ -13,6 +36,7 @@ function SignInModal() {
           id="signinmodal-email"
           placeholder="Email"
           value={email}
+          onChange={handleEmailChange}
         />
       </label>
       <label
@@ -26,6 +50,7 @@ function SignInModal() {
           id="signinmodal-password"
           placeholder="Password"
           value={password}
+          onChange={handlePasswordChange}
         />
       </label>
       <button className="modal__submit" type="submit">
