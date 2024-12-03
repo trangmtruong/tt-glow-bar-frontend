@@ -8,3 +8,7 @@
   border: none;
   cursor: pointer;
 }
+.bookservicer__hidden-options {
+  display: flex;
+  gap: 50px;
+}

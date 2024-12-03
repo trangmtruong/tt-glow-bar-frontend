@@ -50,7 +50,7 @@ function BookService() {
             {activeButton === service.id && (
               <div className="bookservicer__hidden-options">
                 {service.subOptions.map((option, index) => (
-                  <button key={index}>{option}</button>
+                  <p key={index}>{option}</p>
                 ))}
               </div>
             )}
