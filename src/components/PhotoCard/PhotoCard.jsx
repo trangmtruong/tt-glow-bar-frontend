@@ -1,7 +1,7 @@
 import React from "react";
 import "../PhotoCard/PhotoCard.css";
-import Star from "../../assets/Star.svg";
-import LikeIcon from "../../assets/like-empty.svg";
+
+import Favorite from "../../assets/favorite.svg";
 
 function PhotoCard({ item }) {
   return (
@@ -10,7 +10,7 @@ function PhotoCard({ item }) {
       <div className="photo__overlay">
         <p className="photo__service">{item.service}</p>
         <img
-          src={LikeIcon}
+          src={Favorite}
           alt="favorite button"
           className="photo__favorite-btn"
         />
