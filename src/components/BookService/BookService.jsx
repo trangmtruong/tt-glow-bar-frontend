@@ -1,32 +1,62 @@
-import React from "react";
+import React, { useState } from "react";
 import "../BookService/BookService.css";
 
 function BookService() {
+  const [activeButton, setActiveButton] = useState(null);
+
+  const services = [
+    {
+      id: "fullsets",
+      label: "Lash Extensions/Fullsets",
+      subOptions: ["Volume Fullset", "Hybrid Fullset", "Classic Fullset"],
+    },
+    {
+      id: "fills",
+      label: "Lash Fills",
+      subOptions: ["Volume Fill", "Hybrid Fill", "Classic Fill", "Mini Fill"],
+    },
+    {
+      id: "lashlift",
+      label: "Lash Lift",
+      subOptions: ["add Tint"],
+    },
+    {
+      id: "browlam",
+      label: "Brow Lamination",
+      subOptions: ["add Tint"],
+    },
+    {
+      id: "hairremoval",
+      label: "Hair Removal/Waxing",
+      subOptions: ["Lip", "Underarm", "Arms", "Legs", "Bikini"],
+    },
+  ];
+
+  const toggleButtons = (buttonId) => {
+    setActiveButton(activeButton === buttonId ? null : buttonId);
+  };
   return (
     <div>
       <h2 className="bookservice__title">Select Service:</h2>
-      <ul className="bookservice__list">
-        <li className="bookservice__type_fullsets">
-          Lash Extensions/ Fullsets
-          <button>Select</button>
-        </li>
-        <li className="bookservice__type_fills">
-          Lash Fills
-          <button>Select</button>
-        </li>
-        <li className="bookservice__type_fills">
-          Lash Lift
-          <button>Select</button>
-        </li>
-        <li className="bookservice__type_browlam">
-          Brow Lamination
-          <button>Select</button>
-        </li>
-        <li className="bookservice__type_waxing">
-          Hair Removal (Waxing)
-          <button>Select</button>
-        </li>
-      </ul>
+      <div className="bookservice__list">
+        {services.map((service) => (
+          <div key={service.id} className="bookservice__button-container">
+            <button
+              className="bookservice__button"
+              onClick={() => toggleButtons(service.id)}
+            >
+              {service.label}
+            </button>
+            {activeButton === service.id && (
+              <div className="bookservicer__hidden-options">
+                {service.subOptions.map((option, index) => (
+                  <button key={index}>{option}</button>
+                ))}
+              </div>
+            )}
+          </div>
+        ))}
+      </div>
     </div>
   );
 }

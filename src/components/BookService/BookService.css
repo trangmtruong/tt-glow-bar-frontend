@@ -1,0 +1,10 @@
+.bookservice__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bookservice__button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
