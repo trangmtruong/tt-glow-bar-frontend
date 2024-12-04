@@ -11,17 +11,21 @@ function BookService() {
       subOptions: [
         {
           name: "Volume Fullset",
-          price: "3.5 hours @ $200",
+          time: "3.5",
+          price: "200",
           descriptiom: "volume set",
         },
         {
           name: "Hybrid Fullset",
-          price: "3.5 hours @ $180",
+          time: "3.5",
+          price: "180",
+
           description: "Mix between classic and fans",
         },
         {
           name: "Classic Fullset",
-          price: "3 hours @ $150",
+          time: "3",
+          price: "150",
           description: "Natural look",
         },
       ],
@@ -32,22 +36,26 @@ function BookService() {
       subOptions: [
         {
           name: "Volume Fill",
-          price: "2 hours @ $100",
+          time: "2",
+          price: "100",
           description: "2-3 weeks touch up",
         },
         {
           name: "Hybrid Fill",
-          price: "2 hours @ $90",
+          time: "2",
+          price: "90",
           description: "2-3 weeks touch up",
         },
         {
           name: "Classic Fill",
-          price: "2 hours @ $80",
+          time: "2",
+          price: "80",
           description: "2-3 weeks touch up",
         },
         {
           name: "Mini Fill",
-          price: "1 hour @ $60",
+          time: "1",
+          price: "60",
           description: "less than 10 days touchup",
         },
       ],
@@ -58,12 +66,14 @@ function BookService() {
       subOptions: [
         {
           name: "no Tint",
-          price: "1 hour @ $100",
+          time: "1",
+          price: "100",
           description: "lash lift description",
         },
         {
           name: "add Tint",
-          price: "1 hour 15 minutes @ $130",
+          time: "1.5",
+          price: "130",
           description: "lash lift and tint description",
         },
       ],
@@ -74,12 +84,14 @@ function BookService() {
       subOptions: [
         {
           name: "no Tint",
-          price: "45 minutes @ $90",
+          time: "less than 1",
+          price: "90",
           description: "brow lam description",
         },
         {
           name: "add Tint",
-          price: "1 hour @ $130",
+          time: "1",
+          price: "120",
           description: "brow lam and tint description",
         },
       ],
@@ -90,27 +102,32 @@ function BookService() {
       subOptions: [
         {
           name: "lips",
-          price: "10 minutes @ $15",
+          time: "less than .5",
+          price: "15",
           description: "lip wax description",
         },
         {
           name: "underarms",
-          price: "15 minutes @ $30",
+          time: "less than .5",
+          price: "30",
           description: "underarm wax description",
         },
         {
           name: "arms",
-          price: "30 minutes @ $50",
+          time: ".5",
+          price: "50",
           description: "arm wax description",
         },
         {
           name: "legs",
-          price: "45 minutes @ $65",
+          time: "less than 1",
+          price: "65",
           description: "leg wax description",
         },
         {
           name: "brazillian",
-          price: "45 minutes @ $90",
+          time: "less than 1",
+          price: "90",
           description: "brazillian description",
         },
       ],
@@ -137,7 +154,9 @@ function BookService() {
                 {service.subOptions.map((option, index) => (
                   <div key={index}>
                     <label className="bookservice__name">{option.name}</label>
-                    <div className="bookservice__price">{option.price}</div>
+                    <div className="bookservice__price">
+                      {option.time} hours @ ${option.price}
+                    </div>
                     <div className="bookservice__description">
                       {option.description}
                     </div>
