@@ -1,14 +1,37 @@
+.bookservice__title {
+  text-align: center;
+  text-align: center;
+  font-size: 20px;
+  padding-bottom: 40px;
+}
 .bookservice__list {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 50px;
 }
 .bookservice__button {
   background: none;
   border: none;
   cursor: pointer;
+  font-size: 25px;
+  background-color: rgba(41, 30, 24, 0.4);
 }
+.bookservice__button:hover {
+  background-color: rgb(85, 70, 70);
+}
+
+.bookservice__button-container {
+  display: flex;
+  flex-direction: column;
+}
+
 .bookservicer__hidden-options {
   display: flex;
   gap: 50px;
+  text-align: center;
+}
+.bookservice__name {
+  font-size: 20px;
+  text-decoration: underline;
 }
