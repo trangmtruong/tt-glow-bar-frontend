@@ -10,6 +10,7 @@ import Craftmanship from "../Craftmanship/Craftmanship";
 import BookService from "../BookService/BookService";
 import SignUpModal from "../SignUpModal/SignUpModal";
 import SignInModal from "../SignInModal/SignInModal";
+import CalendarModal from "../CalendarModal/CalendarModal";
 
 function App() {
   //useState hooks
@@ -27,6 +28,9 @@ function App() {
   const handleSignInModal = () => {
     setActiveModal("sign-in");
   };
+  const handleCalendarModal = () => {
+    setActiveModal("book-calendar");
+  };
 
   return (
     <>
@@ -38,7 +42,11 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Main />} />
           <Route exact path="/craftmanship" element={<Craftmanship />} />
-          <Route exact path="/book-service" element={<BookService />} />
+          <Route
+            exact
+            path="/book-service"
+            element={<BookService handleCalendarModal={handleCalendarModal} />}
+          />
         </Routes>
         <Footer />
       </div>
@@ -51,6 +59,11 @@ function App() {
         onClose={closeActiveModal}
         isOpen={activeModal === "sign-in"}
         handleSignInModal={handleSignInModal}
+      />
+      <CalendarModal
+        onClose={closeActiveModal}
+        isOpen={activeModal === "book-calendar"}
+        handleCalendarModal={handleCalendarModal}
       />
     </>
   );

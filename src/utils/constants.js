@@ -1,4 +1,4 @@
-export const clientData = [
+const clientData = [
   {
     name: "Lyn",
     service: "Volume Lashes",
@@ -25,3 +25,7 @@ export const clientData = [
     imageUrl: new URL("../assets/clients/Alana.png", import.meta.url),
   },
 ];
+
+const baseUrl = "http://localhosr:3001/";
+
+export { baseUrl, clientData };
