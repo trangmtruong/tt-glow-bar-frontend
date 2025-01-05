@@ -1,15 +1,15 @@
 import { baseUrl } from "./constants";
 import { request } from "./api";
 
-function signUp({ name, avatarUrl, email, password }) {
-  return request(`${baseUrl}/register`, {
+function signUp({ name, email, password }) {
+  return request(`${baseUrl}/signup`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
     },
     body: JSON.stringify({
       name,
-      avatar,
+
       email,
       password,
     }),
@@ -29,8 +29,14 @@ function signIn({ email, password }) {
   });
 }
 
-//getCurrentUser
+function getCurrentUser(token) {
+  return request(`${baseUrl}/users/me`, {
+    method: "GET",
+    headers: {
+      "Content-Type": "application/json",
+      authorization: `Bearer ${token}`,
+    },
+  });
+}
 
-//editProfile
-
-export { signUp, signIn };
+export { signUp, signIn, getCurrentUser };

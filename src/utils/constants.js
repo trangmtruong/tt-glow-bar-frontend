@@ -28,4 +28,6 @@ const clientData = [
 
 const baseUrl = "http://localhosr:3001/";
 
+const APIKey = "AIzaSyCP1Z64ib5RrQfhKj5NTQePKxtHPoXC8oc";
+
 export { baseUrl, clientData };

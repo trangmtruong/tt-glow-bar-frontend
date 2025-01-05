@@ -32,6 +32,11 @@ function App() {
     setActiveModal("book-calendar");
   };
 
+  //onSignIn
+  //onSignUp
+  //handlecardLike
+
+  //useEffects
   return (
     <>
       <div className="app__content">

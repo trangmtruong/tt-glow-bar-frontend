@@ -109,34 +109,34 @@ function BookService({ handleCalendarModal }) {
       label: "Hair Removal/Waxing",
       subOptions: [
         {
-          name: "lips",
+          name: "Lips",
           time: "less than .5",
           price: "15",
           description:
             "Removes unwanted hair from the upper lip for a smooth finish.",
         },
         {
-          name: "underarms",
+          name: "Underarms",
           time: "less than .5",
           price: "30",
           description: "Hair removal from both underarms for clean, soft skin.",
         },
         {
-          name: "arms",
+          name: "Arms",
           time: ".5",
           price: "50",
           description:
             "Removes hair from both arms, leaving them silky and smooth.",
         },
         {
-          name: "legs",
+          name: "Legs",
           time: "less than 1",
           price: "65",
           description:
             "Removes hair from both upper and lower legs for flawlessly smooth legs.",
         },
         {
-          name: "brazillian",
+          name: "Brazillian",
           time: "less than 1",
           price: "90",
           description:
