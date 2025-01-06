@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Navigation.css";
-import headerLogo from "../../assets/glowbar-logo-white.svg";
+import headerLogo from "../../assets/glowbar-logo-white-cropped.svg";
 import Craftmanship from "../Craftmanship/Craftmanship";
 import { Link } from "react-router-dom";
 

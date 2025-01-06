@@ -151,6 +151,26 @@ function BookService({ handleCalendarModal }) {
   };
   return (
     <div className="bookservice__container">
+      <h3 className="bookservice__deposit">
+        Deposit Policy
+        <p className="bookservice__text">
+          To secure your appointment, a deposit of 50% of the service price is
+          required at the time of booking. Please send the deposit via{" "}
+          <a
+            className="bookservice__venmo"
+            href="https://www.venmo.com/tranggang"
+            target="_blank"
+          >
+            Venmo
+          </a>
+          (@tranggang) to confirm your reservation.
+        </p>
+        <p className="bookservice__note">
+          Note: Deposits are non-refundable and will be applied toward your
+          final service cost. Appointments without a deposit will not be
+          confirmed.
+        </p>
+      </h3>
       <h2 className="bookservice__title">Select Service:</h2>
       <div className="bookservice__list">
         {services.map((service) => (
