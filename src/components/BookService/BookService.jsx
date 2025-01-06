@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../BookService/BookService.css";
 import Calendar from "../Calendar/Calendar";
-import Map from "../Map/Map";
+import ServiceMap from "../ServiceMap/ServiceMap";
 
 function BookService({ handleCalendarModal }) {
   const [activeButton, setActiveButton] = useState(null);
@@ -207,7 +207,9 @@ function BookService({ handleCalendarModal }) {
           </div>
         ))}
       </div>
-      <Map />
+      <div className="bookservice__map">
+        <ServiceMap />
+      </div>
     </div>
   );
 }
