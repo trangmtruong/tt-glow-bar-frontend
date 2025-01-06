@@ -1,8 +1,12 @@
 import React from "react";
-import "./Map.css";
-import { APIProvider } from "@vis.gl/react-google-maps";
+import "./ServiceMap.css";
+import {
+  APIProvider,
+  Map,
+  MapCameraChangedEvent,
+} from "@vis.gl/react-google-maps";
 
-function Map() {
+function ServiceMap() {
   return (
     <APIProvider
       apiKey={"Your API key here"}
