@@ -44,6 +44,7 @@ function SignUpModal({ isOpen, onClose }) {
           onChange={handleNameChange}
         />
       </label>
+
       <label htmlFor="signupmodal-email" className="modal__input_type_email">
         Email*{""}
         <input
