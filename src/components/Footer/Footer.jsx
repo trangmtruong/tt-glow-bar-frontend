@@ -1,6 +1,6 @@
 import React from "react";
 import "../Footer/Footer.css";
-import instagramIcon from "../../assets/instagram-icon.svg";
+import instagramIcon from "../../assets/ig.svg";
 
 function Footer() {
   return (
