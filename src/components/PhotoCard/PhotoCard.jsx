@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "../PhotoCard/PhotoCard.css";
 
 import LikeIcon from "../../assets/like-empty.svg";
-// import IsLikedIcon from "../..assets/isliked.svg";
+import IsLikedIcon from "../../assets/islikedicon-red.svg";
 
 function PhotoCard({ item }) {
   const [isLiked, setIsLiked] = useState(false);
