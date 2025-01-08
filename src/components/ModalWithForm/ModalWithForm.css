@@ -27,7 +27,14 @@
   opacity: 1;
   border-radius: 10px;
   align-items: center;
+  width: 100%;
   padding: 15px 30px 30px 30px;
+}
+.modal__content_type_sign-up {
+  width: 264px;
+}
+.modal__content_type_sign-in {
+  width: 264px;
 }
 .modal__close {
   background-image: url(../../assets/close-btn.svg);
@@ -45,6 +52,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
 
 .modal__submit {
