@@ -6,4 +6,22 @@
 .photo__overlay {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+.photo__favorite-btn {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.photo__favorite-btn:hover {
+  transform: scale(1.2);
+  opacity: 0.8;
+}
+
+/* Focus effect */
+.photo__favorite-btn:focus {
+  transform: scale(1.2);
 }

@@ -53,7 +53,7 @@ function BookService({ handleCalendarModal }) {
         },
         {
           name: "Classic Fill",
-          time: "2",
+          time: "1.5",
           price: "80",
           description: "2-3 weeks touch up for classic extensions",
         },
@@ -110,27 +110,27 @@ function BookService({ handleCalendarModal }) {
       label: "Hair Removal/Waxing",
       subOptions: [
         {
-          name: "Lips",
+          name: "Lip",
           time: "less than .5",
           price: "15",
           description:
             "Removes unwanted hair from the upper lip for a smooth finish.",
         },
         {
-          name: "Underarms",
+          name: "Underarm",
           time: "less than .5",
           price: "30",
           description: "Hair removal from both underarms for clean, soft skin.",
         },
         {
-          name: "Arms",
+          name: "Arm",
           time: ".5",
           price: "50",
           description:
             "Removes hair from both arms, leaving them silky and smooth.",
         },
         {
-          name: "Legs",
+          name: "Leg",
           time: "less than 1",
           price: "65",
           description:
@@ -208,7 +208,9 @@ function BookService({ handleCalendarModal }) {
         ))}
       </div>
       <div className="bookservice__map">
-        <ServiceMap />
+        <div className="bookservice__map-container">
+          <ServiceMap />
+        </div>
       </div>
     </div>
   );
