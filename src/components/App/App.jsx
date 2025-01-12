@@ -16,6 +16,8 @@ function App() {
   //useState hooks
   const [activeModal, setActiveModal] = useState("");
 
+  const [selectedSrc, setSelectedSrc] = useState(null);
+
   //functions
   const closeActiveModal = () => {
     setActiveModal("");
@@ -31,6 +33,9 @@ function App() {
   const handleCalendarModal = () => {
     setActiveModal("book-calendar");
   };
+  const handleSelectedCalendarSrc = (src) => {
+    setSelectedSrc(src);
+  };
 
   //onSignIn
   //onSignUp
@@ -43,6 +48,7 @@ function App() {
         <Header
           handleSignUpModal={handleSignUpModal}
           handleSignInModal={handleSignInModal}
+          handleSelectedCalendarSrc={handleSelectedCalendarSrc}
         />
         <Routes>
           <Route exact path="/" element={<Main />} />
@@ -50,7 +56,12 @@ function App() {
           <Route
             exact
             path="/book-service"
-            element={<BookService handleCalendarModal={handleCalendarModal} />}
+            element={
+              <BookService
+                handleCalendarModal={handleCalendarModal}
+                handleSelectedCalendarSrc={handleSelectedCalendarSrc}
+              />
+            }
           />
         </Routes>
         <Footer />

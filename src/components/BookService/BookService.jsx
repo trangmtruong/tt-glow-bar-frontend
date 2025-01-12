@@ -4,13 +4,13 @@ import Calendar from "../Calendar/Calendar";
 import ServiceMap from "../ServiceMap/ServiceMap";
 import { services } from "../../utils/constants";
 
-function BookService({ handleCalendarModal }) {
+function BookService({ handleCalendarModal, handleSelectedCalendarSrc }) {
   const [activeButton, setActiveButton] = useState(null);
-  const [selectedSrc, setSelectedSrc] = useState(null);
+  // const [selectedSrc, setSelectedSrc] = useState(null);
 
-  const handleSelectedCalendarSrc = (src) => {
-    setSelectedSrc(src);
-  };
+  // const handleSelectedCalendarSrc = (src) => {
+  //   setSelectedSrc(src);
+  // };
 
   const toggleButtons = (buttonId) => {
     setActiveButton(activeButton === buttonId ? null : buttonId);
@@ -76,13 +76,12 @@ function BookService({ handleCalendarModal }) {
           </div>
         ))}
       </div>
-      {selectedSrc && (
-        <div className="bookservice__map">
-          <div className="bookservice__map-container">
-            <ServiceMap />
-          </div>
+
+      <div className="bookservice__map">
+        <div className="bookservice__map-container">
+          <ServiceMap />
         </div>
-      )}
+      </div>
     </div>
   );
 }
