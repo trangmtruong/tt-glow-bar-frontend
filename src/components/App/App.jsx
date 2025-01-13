@@ -34,6 +34,7 @@ function App() {
     setActiveModal("book-calendar");
   };
   const handleSelectedCalendarSrc = (src) => {
+    console.log(src);
     setSelectedSrc(src);
   };
 
@@ -59,6 +60,7 @@ function App() {
             element={
               <BookService
                 handleCalendarModal={handleCalendarModal}
+                selectedSrc={selectedSrc}
                 handleSelectedCalendarSrc={handleSelectedCalendarSrc}
               />
             }
@@ -80,6 +82,7 @@ function App() {
         onClose={closeActiveModal}
         isOpen={activeModal === "book-calendar"}
         handleCalendarModal={handleCalendarModal}
+        selectedSrc={selectedSrc}
       />
     </>
   );

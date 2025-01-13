@@ -4,7 +4,11 @@ import Calendar from "../Calendar/Calendar";
 import ServiceMap from "../ServiceMap/ServiceMap";
 import { services } from "../../utils/constants";
 
-function BookService({ handleCalendarModal, handleSelectedCalendarSrc }) {
+function BookService({
+  handleCalendarModal,
+  selectedSrc,
+  handleSelectedCalendarSrc,
+}) {
   const [activeButton, setActiveButton] = useState(null);
   // const [selectedSrc, setSelectedSrc] = useState(null);
 
@@ -15,6 +19,7 @@ function BookService({ handleCalendarModal, handleSelectedCalendarSrc }) {
   const toggleButtons = (buttonId) => {
     setActiveButton(activeButton === buttonId ? null : buttonId);
   };
+
   return (
     <div className="bookservice__container">
       <h3 className="bookservice__deposit">
@@ -61,8 +66,8 @@ function BookService({ handleCalendarModal, handleSelectedCalendarSrc }) {
 
                     <button
                       onClick={() => {
+                        handleCalendarModal();
                         handleSelectedCalendarSrc(option.src);
-                        handleCalendarModal;
                       }}
                       className="bookservice__select-btn"
                       type="button"

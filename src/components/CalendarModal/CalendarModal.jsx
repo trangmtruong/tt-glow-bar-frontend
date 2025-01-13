@@ -2,8 +2,9 @@ import React, { useState } from "react";
 import "../CalendarModal/CalendarModal.css";
 import ModalWithForm from "../ModalWithForm/ModalWithForm";
 import Calendar from "../Calendar/Calendar";
+import { services } from "../../utils/constants";
 
-function CalendarModal({ isOpen, onClose }) {
+function CalendarModal({ isOpen, onClose, selectedSrc }) {
   return (
     <ModalWithForm
       isOpen={isOpen}
@@ -11,7 +12,7 @@ function CalendarModal({ isOpen, onClose }) {
       titleText="Booking Calendar"
       name={"book-calendar"}
     >
-      <Calendar />
+      <Calendar selectedSrc={selectedSrc} />
     </ModalWithForm>
   );
 }

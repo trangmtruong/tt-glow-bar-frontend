@@ -4,11 +4,7 @@ import headerLogo from "../../assets/glowbar-logo-white-cropped.svg";
 import Craftmanship from "../Craftmanship/Craftmanship";
 import { Link } from "react-router-dom";
 
-function Navigation({
-  handleSignUpModal,
-  handleSignInModal,
-  handleSelectedCalendarSrc,
-}) {
+function Navigation({ handleSignUpModal, handleSignInModal }) {
   //usestate
 
   //functions
@@ -35,11 +31,7 @@ function Navigation({
           <Link to="/craftmanship" className="nav__link" type="button">
             Craftmanship
           </Link>
-          <Link
-            to="/book-service"
-            className="nav__link"
-            handleSelectedCalendarSrc={handleSelectedCalendarSrc}
-          >
+          <Link to="/book-service" className="nav__link">
             Book Service
           </Link>
         </div>
