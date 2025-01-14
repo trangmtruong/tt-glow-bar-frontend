@@ -69,3 +69,9 @@
   color: white;
   background-color: #534439;
 }
+
+/* @media (max-width: 362px) {
+  .modal__content {
+    padding: 10px 25px 25px 25px;
+  }
+} */

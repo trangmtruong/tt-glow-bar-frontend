@@ -14,3 +14,9 @@
   gap: 50px;
   padding-right: 40px;
 }
+
+@media (max-width: 556px) {
+  .craftmanship__content {
+    margin-top: 50px;
+  }
+}

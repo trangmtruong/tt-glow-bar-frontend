@@ -42,3 +42,20 @@
     padding-right: 20px;
   }
 }
+
+@media (max-width: 556px) {
+  .nav__logo {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  .nav__container {
+    flex-direction: column-reverse;
+    padding-bottom: 40px;
+    margin-right: 20px;
+  }
+}
+@media (max-width: 362px) {
+  .nav__link {
+    font-size: 13px;
+  }
+}
