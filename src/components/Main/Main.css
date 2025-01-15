@@ -1,7 +1,3 @@
-@font-face {
-  src: url("../../vendor/roboto-regular.woff") format("woff");
-  font-family: "Roboto";
-}
 .main {
   font-family: Roboto, sans-serif;
   padding-top: 150px;

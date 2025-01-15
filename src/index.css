@@ -1,6 +1,7 @@
 @import "normalize.css";
+
 @font-face {
-  src: url("../../vendor/roboto-regular.woff") format("woff");
+  src: url("./vendor/roboto-regular.woff") format("woff");
   font-family: "Roboto";
 }
 
