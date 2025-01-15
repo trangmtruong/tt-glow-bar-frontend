@@ -28,7 +28,7 @@ TT's Glow Bar is designed to make appointment booking simple and efficient. Cust
 ## **Live Demo**
 
 The application is deployed and can be accessed at:  
-[**TT's Glow Bar on GitHub**](https://github.com/trangmtruong/tt-glow-bar-frontend)
+[**TT's Glow Bar on GitHub**](https://trangmtruong.github.io/tt-glow-bar-frontend/)
 
 ---
 
