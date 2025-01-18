@@ -37,7 +37,8 @@ const services = [
         price: "200",
         description:
           "Bold and dramatic look, featuring lightweight, fluffy lashes expertly fanned to create maximum fullness and density.",
-        src: "https://calendar.app.google/BuHLv1M7tX3RSkJq5",
+        // src: "https://calendar.app.google/BuHLv1M7tX3RSkJq5",
+        src: "https://calendar.google.com/calendar/appointments/schedules/AcZssZ2jlEGuckVXQy8O91ElTSAFu-IAW1_oVQT4RrrI14j7--BbYtB13HId811TFd5yMkQr2aNJw0JJ?gv=true",
       },
       {
         name: "Hybrid Fullset",

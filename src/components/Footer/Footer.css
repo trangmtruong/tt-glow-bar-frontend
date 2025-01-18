@@ -1,6 +1,5 @@
 .footer {
   font-family: Roboto, sans-serif;
-
   display: flex;
   justify-content: space-between;
   padding-bottom: 30px;
@@ -14,7 +13,14 @@
 .footer_contact {
   padding-right: 60px;
   display: flex;
-  /* align-content: center; */
-  /* justify-content: center; */
   align-items: center;
+}
+
+@media (max-width: 432px) {
+  .footer__copyright {
+    padding-left: 20px;
+  }
+  .footer_contact {
+    padding-right: 20px;
+  }
 }
