@@ -1,0 +1,22 @@
+.craftmanship__content {
+  padding-top: 200px;
+  background-color: #4a3c32;
+}
+.craftmanship__title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+.craftmanship__list {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 50px;
+  padding-right: 40px;
+}
+
+@media (max-width: 556px) {
+  .craftmanship__content {
+    margin-top: 50px;
+  }
+}

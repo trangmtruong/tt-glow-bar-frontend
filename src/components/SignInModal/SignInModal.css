@@ -1,0 +1,15 @@
+.modal__input_type_email {
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.modal__input_type_password {
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+@media (max-width: 362px) {
+}

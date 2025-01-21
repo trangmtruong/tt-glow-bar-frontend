@@ -1,0 +1,26 @@
+.footer {
+  font-family: Roboto, sans-serif;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  background-color: #291e18;
+}
+.footer__copyright {
+  padding-left: 60px;
+}
+
+.footer_contact {
+  padding-right: 60px;
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 432px) {
+  .footer__copyright {
+    padding-left: 20px;
+  }
+  .footer_contact {
+    padding-right: 20px;
+  }
+}
