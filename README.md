@@ -1,63 +1,48 @@
-# **TT's Glow Bar**
+# TT's Glow Bar ✨
 
-This is a responsive web application for booking appointments. It provides a user-friendly interface for customers to browse services, select available slots, and book appointments seamlessly.
+## Overview
 
----
+**TT's Glow Bar** is a modern **front-end web application** that enables clients to **book appointments, browse a beauty portfolio, and locate the business with ease**. Designed with a **fully responsive UI**, this app ensures a smooth user experience across all devices.
 
-## **Table of Contents**
-
-- [About the Project](#about-the-project)
-- [Live Demo](#live-demo)
-- [Features](#features)
-- [Technologies Used](#technologies-used)
-- [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
+🚀 **Upcoming Features**:  
+A **backend system is in progress** to introduce **user authentication, loyalty points, and perks** in future updates.
 
 ---
 
-## **About the Project**
+## 🚀 Features
 
-TT's Glow Bar is designed to make appointment booking simple and efficient. Customers can explore available services, check portfolios, and find the business location, all within a responsive and visually appealing interface.
-
----
-
-## **Live Demo**
-
-The application is deployed and can be accessed at:  
-[**TT's Glow Bar on GitHub**](https://trangmtruong.github.io/tt-glow-bar-frontend/)
+- **Appointment Booking** – Clients can schedule appointments easily.
+- **Interactive Service Portfolio** – Browse beauty services and view completed work examples.
+- **Google Calendar & Maps Integration** – Book appointments and find business locations in real time.
+- **Responsive Web Design** – Optimized for **mobile, tablet, and desktop** views.
+- **Scalable Architecture** – Built with **React & Vite** for a fast and efficient development experience.
+- **Real-World Git Workflows** – Implemented **feature branching** before merging to main for better code management.
 
 ---
 
-## **Features**
+## 🛠 Technologies Used
 
-- **Appointment Booking**: Schedule and manage appointments easily.
-- **Responsive Web Design**: Optimized for all devices, from desktops to mobile phones.
-- **Service Listings**: View detailed information about offered services.
-- **Work Portfolio**: Showcase work examples and results.
-- **About Me and Location**: Provide business details and location via Google Maps integration.
+- **Frontend**: React, Vite, HTML5, CSS
+- **APIs/Integrations**: Google Calendar API, Google Maps API
+- **Development Tools**: Git, GitHub, VS Code, Terminal
 
 ---
 
-## **Technologies Used**
+## 🌐 Live Demo
 
-- **Frontend**: React, Vite, CSS
-- **APIs/Integrations**: Google Maps, Google Calendar
-- **Tools**: Git, Terminal, VS Code
+🔗 **[TT's Glow Bar - Live Site](https://trangmtruong.github.io/tt-glow-bar-frontend/)**  
+📂 **[GitHub Repository](https://github.com/trangmtruong/tt-glow-bar-frontend)**
 
 ---
 
-## **Getting Started**
+## 🏗️ Getting Started
 
 ### **Prerequisites**
 
-Make sure you have the following installed:
+Ensure you have the following installed:
 
-- **Node.js**: [Download here](https://nodejs.org/)
-- **Git**: [Download here](https://git-scm.com/)
+- **[Node.js](https://nodejs.org/)**
+- **[Git](https://git-scm.com/)**
 
 ### **Installation**
 
@@ -80,3 +65,9 @@ Follow these steps to run the project locally:
 
 4. Open your browser and go to:
    http://localhost:3000
+
+### **Contact**
+
+For any inquiries or collaboration opportunities, feel free to reach out:
+📧 **[Email]: (trangmtruong94@gmail.com)**
+💼 **[LinkedIn:](https://www.linkedin.com/in/trangmtruong/)**
