@@ -30,8 +30,7 @@ A **backend system is in progress** to introduce **user authentication, loyalty 
 
 ## 🌐 Live Demo
 
-🔗 **[TT's Glow Bar - Live Site](https://trangmtruong.github.io/tt-glow-bar-frontend/)**  
-📂 **[GitHub Repository](https://github.com/trangmtruong/tt-glow-bar-frontend)**
+🔗 **[TT's Glow Bar - Live Site](https://trangmtruong.github.io/tt-glow-bar-frontend/)**
 
 ---
 
@@ -69,5 +68,6 @@ Follow these steps to run the project locally:
 ### **Contact**
 
 For any inquiries or collaboration opportunities, feel free to reach out:
-📧 **[Email]: (trangmtruong94@gmail.com)**
-💼 **[LinkedIn:](https://www.linkedin.com/in/trangmtruong/)**
+
+📧 **Email:** [trangmtruong@icloud.com](mailto:trangmtruong@icloud.com)  
+💼 **LinkedIn:** [LinkedIn](https://www.linkedin.com/in/trangmtruong/)
