@@ -69,5 +69,5 @@ Follow these steps to run the project locally:
 
 For any inquiries or collaboration opportunities, feel free to reach out:
 
-📧 **Email:** [trangmtruong@icloud.com](mailto:trangmtruong@icloud.com)  
-💼 **LinkedIn:** [LinkedIn](https://www.linkedin.com/in/trangmtruong/)
+📧 **[trangmtruong@icloud.com](mailto:trangmtruong@icloud.com)**  
+💼 **[LinkedIn](https://www.linkedin.com/in/trangmtruong/)**
